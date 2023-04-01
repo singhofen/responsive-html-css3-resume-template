@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <title>Responsive HTML/CSS Resume Template</title>
@@ -227,7 +228,7 @@
         <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
             <div class="w3-content" style="max-width:600px">
                 <h4 class="w3-center"><b>Contact Form with Netlify integration</b></h4>
-                <form name="contact" netlify method="POST" data-netlify="true" action="POST" data-netlify-recaptcha="true">
+                <form action='POST' data-netlify-recaptcha='true' enctype='multipart/form-data' method='POST' name='contact'><input type='hidden' name='form-name' value='contact' />
                     <div class="w3-section">
                         <label>Name</label>
                         <input class="w3-input w3-border" type="text" name="Name" required>
@@ -248,7 +249,25 @@
                     <button type="submit reset" value="Send Message Reset" class="w3-button w3-block w3-black w3-margin-bottom">
           <div class="actions">
              
-              <div class="field" data-netlify-recaptcha="true"></div>
+              <div class='field'><script src='https://www.google.com/recaptcha/api.js'></script>
+<div class='g-recaptcha' data-sitekey='6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9'></div>
+<noscript>
+  <div>
+  <div style="width: 302px; height: 422px; position: relative;">
+  <div style="width: 302px; height: 422px; position: absolute;">
+  <iframe src="https://www.google.com/recaptcha/api/fallback?k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9" frameborder="0" scrolling="no"
+    style="width: 302px; height:422px; border-style: none;">
+  </iframe>
+  </div>
+  </div>
+  <div style="width: 300px; height: 60px; border-style: none; bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px; background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+    <textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+      style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;" >
+    </textarea>
+  </div>
+  </div>
+</noscript>
+</div>
           </div>
   
         <i class="fa fa-paper-plane"></i>Send Message
